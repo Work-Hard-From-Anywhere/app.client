@@ -10,13 +10,13 @@ export default function TabsLayout() {
         tabBarActiveTintColor: '#6366f1',
       }}>
       <Tabs.Screen
-        name="Map"
+        name="map"
         options={{
           tabBarIcon: ({ color }) => <MapPin color={color} />,
         }}
       />
       <Tabs.Screen
-        name="Find"
+        name="find"
         options={{
           tabBarIcon: ({ color }) => <SearchIcon color={color} />,
         }}
