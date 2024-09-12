@@ -5,6 +5,8 @@ import { TamaguiProvider } from 'tamagui';
 
 import config from '../tamagui.config';
 
+import { ScreenContent } from '~/components/ScreenContent';
+
 export default function Layout() {
   const [loaded] = useFonts({
     Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
@@ -21,7 +23,9 @@ export default function Layout() {
 
   return (
     <TamaguiProvider config={config}>
-      <Stack />
+      <ScreenContent>
+        <Stack screenOptions={{ headerShown: false }} />
+      </ScreenContent>
     </TamaguiProvider>
   );
 }
