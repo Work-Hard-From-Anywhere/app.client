@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { MapPin, Newspaper, SearchIcon, User } from 'lucide-react-native';
+import { BookmarkIcon, MapPin, Newspaper, SearchIcon, User } from 'lucide-react-native';
 import React from 'react';
 
 export default function TabsLayout() {
@@ -22,9 +22,9 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name="news"
+        name="bookmarks"
         options={{
-          tabBarIcon: ({ color }) => <Newspaper color={color} />,
+          tabBarIcon: ({ color }) => <BookmarkIcon color={color} />,
         }}
       />
       <Tabs.Screen
