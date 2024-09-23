@@ -1,6 +1,5 @@
 import { Tabs } from 'expo-router';
-import { BookmarkIcon, MapPin, Newspaper, SearchIcon, User } from 'lucide-react-native';
-import React from 'react';
+import { BookmarkIcon, MapPin, SearchIcon, User } from 'lucide-react-native';
 
 export default function TabsLayout() {
   return (
@@ -8,6 +7,11 @@ export default function TabsLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: '#6366f1',
+        tabBarStyle: {
+          height: 100,
+          paddingBottom: 35,
+          paddingTop: 15,
+        },
       }}>
       <Tabs.Screen
         name="map"

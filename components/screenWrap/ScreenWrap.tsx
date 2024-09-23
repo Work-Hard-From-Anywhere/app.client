@@ -5,6 +5,8 @@ type IScreenContentProps = {
   children?: ReactNode;
 };
 
-export const ScreenContent = ({ children }: IScreenContentProps) => {
+const ScreenWrap = ({ children }: IScreenContentProps) => {
   return <Theme name="light">{children}</Theme>;
 };
+
+export default ScreenWrap;

@@ -16,6 +16,12 @@
         {
           "launchMode": "most-recent"
         }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
       ]
     ],
     "experiments": {
@@ -34,7 +40,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gfregalado.cafe-work"
     },
     "android": {
       "adaptiveIcon": {

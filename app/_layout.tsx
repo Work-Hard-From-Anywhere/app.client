@@ -5,7 +5,7 @@ import { TamaguiProvider } from 'tamagui';
 
 import config from '../tamagui.config';
 
-import { ScreenContent } from '~/components/ScreenContent';
+import { ScreenWrap } from '~/components/screenWrap';
 
 export default function Layout() {
   const [loaded] = useFonts({
@@ -23,9 +23,9 @@ export default function Layout() {
 
   return (
     <TamaguiProvider config={config}>
-      <ScreenContent>
+      <ScreenWrap>
         <Stack screenOptions={{ headerShown: false }} />
-      </ScreenContent>
+      </ScreenWrap>
     </TamaguiProvider>
   );
 }

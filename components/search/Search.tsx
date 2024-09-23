@@ -14,7 +14,7 @@ import { Input } from 'tamagui';
 const SCREEN_HEIGHT = Dimensions.get('window').height - 150;
 const COLLAPSED_HEIGHT = 80;
 
-const SearchBar = () => {
+const Search = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const animatedHeight = useRef(new Animated.Value(COLLAPSED_HEIGHT)).current;
 
@@ -42,7 +42,7 @@ const SearchBar = () => {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <Animated.View style={[styles.container, { height: animatedHeight }]}>
         <View style={[styles.searchBarContainer, { height: COLLAPSED_HEIGHT }]}>
-          <Input size="$4" placeholder="Where to?" style={styles.input} onFocus={handleExpand} />
+          <Input size="$4" placeholder="Search" style={styles.input} onFocus={handleExpand} />
           {isExpanded && (
             <TouchableOpacity onPress={handleCollapse} style={styles.cancelButton}>
               <Text>Cancel</Text>
@@ -96,4 +96,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchBar;
+export default Search;
